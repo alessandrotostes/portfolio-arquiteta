@@ -315,7 +315,8 @@ section {
 
 .portfolio-item img {
   border-radius: 10px;
-  height: 500px;
+  height: auto;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -566,7 +567,48 @@ footer {
   }
 
   .portfolio-item img {
-    height: 350px;
+    /* Height is already auto from general rule, no need to repeat */
+  }
+
+  /* Carousel adjustments for medium screens */
+  .carousel-caption {
+    position: static;
+    transform: none;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 15px;
+    max-width: 100%;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+  }
+  .carousel-caption h3 {
+    font-size: 1.2rem;
+  }
+  .carousel-caption p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+
+  /* Adjust service cards for medium screens */
+  .service-card {
+    margin-bottom: 30px; /* Ensure consistent spacing */
+  }
+
+  /* Adjust portfolio gallery cards for medium screens */
+  .portfolio-card {
+    margin-bottom: 30px; /* Ensure consistent spacing */
+  }
+
+  /* Adjust contact info alignment */
+  .contact-info {
+    margin-bottom: 30px;
+    padding-top: 0; /* Remove unnecessary padding */
+    text-align: center; /* Center align content */
+  }
+  .contact-item {
+    justify-content: center; /* Center items */
+  }
+  .social-links {
+    justify-content: center; /* Center social links */
   }
 }
 
@@ -581,6 +623,38 @@ footer {
   }
 
   .portfolio-item img {
-    height: 250px;
+    /* Height is already auto from general rule, no need to repeat */
+  }
+
+  /* Carousel adjustments for small screens */
+  .carousel-caption {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+  .carousel-caption h3 {
+    font-size: 1rem;
+  }
+  .carousel-caption p {
+    font-size: 0.75rem;
+  }
+
+  /* Adjust service cards columns for small screens */
+  .service-card {
+    padding: 20px;
+  }
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Adjust portfolio gallery columns for small screens */
+  .portfolio-card img {
+    /* Height is auto via img-fluid, ensure object-fit covers */
+    object-fit: cover; /* Ensure image covers the area nicely */
+  }
+
+  /* Adjust contact form inputs */
+  .contact-form .form-control {
+    height: 45px;
+    padding: 8px 15px;
   }
 }
