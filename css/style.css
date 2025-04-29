@@ -16,10 +16,8 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  font-family: "Poppins", sans-serif;
-  color: var(--text-color);
-  line-height: 1.6;
   overflow-x: hidden;
 }
 
@@ -47,8 +45,17 @@ a:hover {
   color: var(--secondary-color);
 }
 
+.row {
+  overflow-x: hidden; /* Prevent overflow within Bootstrap rows */
+}
+
+.container {
+  overflow-x: hidden; /* Prevent overflow within containers */
+}
+
 section {
   padding: var(--section-padding);
+  overflow-x: hidden; /* Prevent horizontal overflow within sections */
 }
 
 .section-title {
@@ -246,7 +253,7 @@ section {
   height: 8px;
   background-color: #f1f1f1;
   border-radius: 10px;
-  overflow: visible;
+  overflow: hidden; /* Changed from visible to hidden */
 }
 
 .progress-bar {
@@ -657,4 +664,9 @@ footer {
     height: 45px;
     padding: 8px 15px;
   }
+}
+
+/* Prevent AOS animations from causing overflow */
+[data-aos] {
+  overflow: hidden;
 }
