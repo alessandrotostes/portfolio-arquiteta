@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio de Arquitetura</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome para ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- AOS (Animate On Scroll) para animações -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- CSS de Animações -->
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"> THAIS<span>ARQUITETURA</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfólio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <section id="home" class="hero-section">
+      <div class="overlay"></div>
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div
+            class="col-md-8 hero-text"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <h1>
+              Transformando <span>Ideias</span> em Espaços Extraordinários
+            </h1>
+            <p>
+              Arquitetura inovadora que combina estética, funcionalidade e
+              sustentabilidade
+            </p>
+            <a href="#portfolio" class="btn btn-primary btn-lg">Ver Projetos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+            <div class="about-img">
+              <img src="img/architect.jpg" alt="Arquiteto" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+            <div class="section-title">
+              <h2>Sobre <span>Mim</span></h2>
+            </div>
+            <p class="lead">
+              Olá, sou uma arquiteta apaixonada por criar espaços que inspiram.
+            </p>
+            <p>
+              Com mais de 10 anos de experiência no mercado, especializo-me em
+              projetos residenciais e comerciais que combinam estética
+              contemporânea com funcionalidade prática. Minha abordagem é
+              centrada no cliente, garantindo que cada projeto reflita a
+              personalidade e necessidades específicas de quem o habitará.
+            </p>
+            <p>
+              Formada pela Universidade de Arquitetura de Lisboa, tenho
+              pós-graduação em Design Sustentável e sou membro do Conselho de
+              Arquitetura e Urbanismo.
+            </p>
+            <div class="row mt-4">
+              <div class="col-md-6">
+                <div class="skill-item">
+                  <h5>Projetos Residenciais</h5>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 95%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="skill-item">
+                  <h5>Design de Interiores</h5>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 90%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="skill-item">
+                  <h5>Arquitetura Sustentável</h5>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 85%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="skill-item">
+                  <h5>Projetos Comerciais</h5>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="servicos" class="py-5 bg-light">
+      <div class="container">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+          <h2>Meus <span>Serviços</span></h2>
+          <p>Soluções completas para seus projetos arquitetónicos</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="service-card">
+              <div class="icon-box">
+                <i class="fas fa-home"></i>
+              </div>
+              <h3>Projetos Residenciais</h3>
+              <p>
+                Criação de espaços habitacionais que combinam conforto, estética
+                e funcionalidade, adaptados ao estilo de vida de cada cliente.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-card">
+              <div class="icon-box">
+                <i class="fas fa-building"></i>
+              </div>
+              <h3>Projetos Comerciais</h3>
+              <p>
+                Desenvolvimento de espaços comerciais que potencializam a
+                experiência do cliente e refletem a identidade da marca.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-card">
+              <div class="icon-box">
+                <i class="fas fa-couch"></i>
+              </div>
+              <h3>Design de Interiores</h3>
+              <p>
+                Criação de ambientes internos harmoniosos e funcionais, com
+                seleção de materiais, cores e mobiliário.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-card">
+              <div class="icon-box">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <h3>Arquitetura Sustentável</h3>
+              <p>
+                Projetos que integram soluções ecológicas, eficiência energética
+                e materiais sustentáveis.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="500">
+            <div class="service-card">
+              <div class="icon-box">
+                <i class="fas fa-pencil-ruler"></i>
+              </div>
+              <h3>Consultoria</h3>
+              <p>
+                Assessoria técnica em todas as fases do projeto, desde a
+                concepção até a execução final.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="600">
+            <div class="service-card">
+              <div class="icon-box">
+                <i class="fas fa-drafting-compass"></i>
+              </div>
+              <h3>Reformas</h3>
+              <p>
+                Transformação de espaços existentes, adaptando-os às novas
+                necessidades e tendências contemporâneas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Portfólio -->
+    <section id="portfolio" class="py-5">
+      <div class="container">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+          <h2>Meu <span>Portfólio</span></h2>
+          <p>Conheça alguns dos meus projetos mais recentes</p>
+        </div>
+
+        <!-- Carrossel de Projetos -->
+        <div
+          id="portfolioCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#portfolioCarousel"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#portfolioCarousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#portfolioCarousel"
+              data-bs-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#portfolioCarousel"
+              data-bs-slide-to="3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="portfolio-item" data-aos="fade-up">
+                <img
+                  src="img/project1.jpg"
+                  class="d-block w-100"
+                  alt="Projeto Residencial"
+                />
+                <div class="carousel-caption">
+                  <h3>Residência Moderna</h3>
+                  <p>
+                    Projeto residencial com conceito aberto e integração com a
+                    natureza
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="portfolio-item" data-aos="fade-up">
+                <img
+                  src="img/project2.jpg"
+                  class="d-block w-100"
+                  alt="Projeto Comercial"
+                />
+                <div class="carousel-caption">
+                  <h3>Espaço Comercial</h3>
+                  <p>Design inovador para loja conceito no centro da cidade</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="portfolio-item" data-aos="fade-up">
+                <img
+                  src="img/project3.jpg"
+                  class="d-block w-100"
+                  alt="Design de Interiores"
+                />
+                <div class="carousel-caption">
+                  <h3>Interior Minimalista</h3>
+                  <p>
+                    Projeto de interiores com foco em simplicidade e
+                    funcionalidade
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="portfolio-item" data-aos="fade-up">
+                <img
+                  src="img/project4.jpg"
+                  class="d-block w-100"
+                  alt="Projeto Sustentável"
+                />
+                <div class="carousel-caption">
+                  <h3>Casa Sustentável</h3>
+                  <p>
+                    Residência com certificação ambiental e baixo impacto
+                    ecológico
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#portfolioCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#portfolioCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+
+        <!-- Galeria de Projetos -->
+        <div class="row mt-5">
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="portfolio-card">
+              <img src="img/gallery1.jpg" alt="Projeto 1" class="img-fluid" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h4>Casa Moderna</h4>
+                  <p>Projeto Residencial</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="portfolio-card">
+              <img src="img/gallery2.jpg" alt="Projeto 2" class="img-fluid" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h4>Escritório Corporativo</h4>
+                  <p>Projeto Comercial</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="portfolio-card">
+              <img src="img/gallery3.jpg" alt="Projeto 3" class="img-fluid" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h4>Sala de Estar</h4>
+                  <p>Design de Interiores</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="portfolio-card">
+              <img src="img/gallery4.jpg" alt="Projeto 4" class="img-fluid" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h4>Loft Urbano</h4>
+                  <p>Projeto Residencial</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="500">
+            <div class="portfolio-card">
+              <img src="img/gallery5.jpg" alt="Projeto 5" class="img-fluid" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h4>Café Contemporâneo</h4>
+                  <p>Projeto Comercial</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="600">
+            <div class="portfolio-card">
+              <img src="img/gallery6.jpg" alt="Projeto 6" class="img-fluid" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h4>Casa de Praia</h4>
+                  <p>Projeto Residencial</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Contacto -->
+    <section id="contacto" class="py-5 bg-light">
+      <div class="container">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+          <h2>Entre em <span>Contato</span></h2>
+          <p>Vamos transformar sua ideia em realidade</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="text">
+                  <h5>Localização</h5>
+                  <p>Avenida da Liberdade, 123, Brail</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon"><i class="fas fa-envelope"></i></div>
+                <div class="text">
+                  <h5>Email</h5>
+                  <p>contato@thaisarquitetura.br</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon"><i class="fas fa-phone"></i></div>
+                <div class="text">
+                  <h5>Telefone</h5>
+                  <p>+00 00000-0000</p>
+                </div>
+              </div>
+              <div class="social-links mt-4">
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-pinterest"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="contact-info">
+              <h3>Espaço  reservado algo relevante: Alguma informação adicional, localizacao direta do google maps, etc. </h3>
+            <!-- Parte caixa de contato-->
+
+            <!-- <form class="contact-form">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Seu Nome"
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Seu Email"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Assunto" />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  placeholder="Sua Mensagem"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Enviar Mensagem
+              </button>
+            </form> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="footer-logo">THAIS<span>ARQUITETURA</span></h3>
+            <p>Transformando ideias em espaços extraordinários desde 2010.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p>&copy; 2025 Thais T. Todos os direitos reservados.</p>
+            Site desenvolvido por <strong>Tostes</strong>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
