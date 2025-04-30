@@ -675,3 +675,15 @@ footer {
   height: 400px;
   border-radius: 10px;
 }
+
+/* Ajustes Carrossel Portfólio */
+#portfolioCarousel {
+  max-width: 80%; /* Define a largura máxima do carrossel */
+  margin: 0 auto; /* Centraliza o carrossel na página */
+}
+
+#portfolioCarousel .portfolio-item img {
+  height: 500px; /* Define uma altura fixa para as imagens do carrossel */
+  object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+  width: 100%; /* Mantém a largura total dentro do item do carrossel */
+}
