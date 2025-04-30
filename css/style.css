@@ -478,10 +478,6 @@ footer {
 .footer-logo span {
   color: var(--secondary-color);
 }
-.footer-right {
-  text-align: right;
-  padding-right: 20px;
-}
 
 /* Back to Top Button */
 .back-to-top {
