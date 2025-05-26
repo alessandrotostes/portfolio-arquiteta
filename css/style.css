@@ -225,6 +225,10 @@ section {
 
 /* Sobre Section */
 .about-img {
+  display: cover;
+  justify-content: auto; /* horizontal */
+  align-items: auto; /* vertical */
+  height: 75svh; /* defina uma altura */
   position: relative;
   border-radius: 10px;
   overflow: hidden;
