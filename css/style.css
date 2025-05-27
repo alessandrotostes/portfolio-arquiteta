@@ -225,18 +225,20 @@ section {
 
 /* Sobre Section */
 .about-img {
-  display: cover;
-  justify-content: auto; /* horizontal */
-  align-items: auto; /* vertical */
-  height: 75svh; /* defina uma altura */
+  height: 75svh; /* Mantém a altura definida */
   position: relative;
   border-radius: 10px;
-  overflow: hidden;
+  overflow: hidden; /* Importante para object-fit: cover */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Garante que o contêiner ocupe a largura da coluna */
 }
 
 .about-img img {
-  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a imagem cobrir todo o espaço, cortando se necessário */
+  object-position: center; /* Centraliza a imagem dentro do contêiner */
+  border-radius: 10px; /* Mantém o border-radius */
   transition: var(--transition);
 }
 
@@ -257,7 +259,7 @@ section {
   height: 8px;
   background-color: #f1f1f1;
   border-radius: 10px;
-  overflow: hidden; /* Changed from visible to hidden */
+  overflow: hidden;
 }
 
 .progress-bar {
@@ -401,7 +403,7 @@ section {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  height: 100%;
+  height: auto;
 }
 .contact-info h3 {
   color: var(--primary-color);
@@ -599,27 +601,38 @@ footer {
     margin-bottom: 0;
   }
 
-  /* Adjust service cards for medium screens */
   .service-card {
-    margin-bottom: 30px; /* Ensure consistent spacing */
+    margin-bottom: 30px;
   }
 
-  /* Adjust portfolio gallery cards for medium screens */
   .portfolio-card {
-    margin-bottom: 30px; /* Ensure consistent spacing */
+    margin-bottom: 30px;
   }
 
-  /* Adjust contact info alignment */
   .contact-info {
     margin-bottom: 30px;
-    padding-top: 0; /* Remove unnecessary padding */
-    text-align: center; /* Center align content */
+    padding-top: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .contact-item {
-    justify-content: center; /* Center items */
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  .contact-item .icon {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .contact-item .text {
+    text-align: center;
   }
   .social-links {
-    justify-content: center; /* Center social links */
+    justify-content: center;
+    width: 100%;
   }
 }
 
@@ -634,10 +647,8 @@ footer {
   }
 
   .portfolio-item img {
-    /* Height is already auto from general rule, no need to repeat */
   }
 
-  /* Carousel adjustments for small screens */
   .carousel-caption {
     padding: 10px;
     font-size: 0.8rem;
@@ -649,7 +660,6 @@ footer {
     font-size: 0.75rem;
   }
 
-  /* Adjust service cards columns for small screens */
   .service-card {
     padding: 20px;
   }
@@ -657,27 +667,31 @@ footer {
     font-size: 1.1rem;
   }
 
-  /* Adjust portfolio gallery columns for small screens */
   .portfolio-card img {
-    /* Height is auto via img-fluid, ensure object-fit covers */
-    object-fit: cover; /* Ensure image covers the area nicely */
+    object-fit: cover;
   }
 
-  /* Adjust contact form inputs */
   .contact-form .form-control {
     height: 45px;
     padding: 8px 15px;
   }
 }
 
-/* Prevent AOS animations from causing overflow */
 [data-aos] {
   overflow: hidden;
 }
+.maps {
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
 .maps iframe {
   width: 100%;
-  height: 400px;
-  border-radius: 10px;
+  height: 100%;
+  border: none;
+  display: block;
 }
 
 /* Ajustes Carrossel Portfólio */
